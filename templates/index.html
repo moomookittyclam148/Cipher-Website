@@ -1,1 +1,45 @@
-<h1>Hello World</h1>
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container">
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4" style="text-align:center;">Cipher Site</h1>
+      <p class="lead" style="text-align:center;">Welcome to the website that brings all ciphers and encodings together to encode and decode!</p>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/static/imgs/encoding_icon.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Encodings</h5>
+            <p class="card-text">List of encodings such as base64, Hex, etc.</p>
+            <a href="/encodings" class="btn btn-primary">start</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="/static/imgs/cipher_icon.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Ciphers</h5>
+            <p class="card-text">List of chipers such as ROT 13, Vigenere, etc.</p>
+            <a href="/ciphers" class="btn btn-primary">start</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}
