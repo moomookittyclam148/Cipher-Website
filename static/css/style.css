@@ -1,4 +1,41 @@
-.card{
+body {
+  background-image: url("../imgs/background.png");
+}
+
+#jumbotron_title {
+  padding-top: 25px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.jumbotron {
+  padding-top: 50px;
+  border: 10px solid black;
+}
+
+.card {
     float: none;
     margin: 0 auto;
+    outline: #000000 solid 10px;
+}
+
+#encoding_selectors {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border: 10px solid black;
+  background-color: #8342f4;
+}
+
+#about_section {
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 25px;
+  border: 10px solid black;
+  background-color: #F9F9F9;
+  text-align: center;
+}
+
+#about_section a {
+  margin: 20px;
 }
